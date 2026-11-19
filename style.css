@@ -2786,3 +2786,416 @@ section {
     }
 
 }
+/* =====================================================
+   ROYAL ANIMATED MISHRA SAREE CENTER BRAND
+===================================================== */
+
+/* BRAND CONTAINER */
+
+.logo,
+.brand,
+.logo-container {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+}
+
+
+/* LOGO BOX */
+
+.logo-icon,
+.brand-icon {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        #2874F0,
+        #1746A2,
+        #0D2B64
+    );
+
+    color: #ffffff;
+
+    box-shadow:
+
+        0 8px 25px rgba(40, 116, 240, 0.25),
+
+        inset 0 1px 0 rgba(255, 255, 255, 0.3);
+
+    animation: royalLogoGlow 4s ease-in-out infinite;
+
+}
+
+
+/* SHIMMER EFFECT */
+
+.logo-icon::before,
+.brand-icon::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: -100%;
+
+    left: -100%;
+
+    width: 60%;
+
+    height: 300%;
+
+    background: linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        rgba(255, 255, 255, 0.5),
+
+        transparent
+
+    );
+
+    transform: rotate(25deg);
+
+    animation: logoShimmer 5s ease-in-out infinite;
+
+}
+
+
+/* LOGO LETTER */
+
+.logo-icon span,
+.brand-icon span {
+
+    position: relative;
+
+    z-index: 2;
+
+    font-family: Georgia, serif;
+
+    font-weight: 700;
+
+    color: #ffffff;
+
+}
+
+
+/* SHOP NAME */
+
+.logo-text,
+.brand-name,
+.logo h2 {
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-weight: 900;
+
+    letter-spacing: 2px;
+
+    color: #2874F0;
+
+    position: relative;
+
+    animation: royalNameReveal 1.2s ease both;
+
+}
+
+
+/* MISHRA */
+
+.logo-text strong,
+.brand-name strong {
+
+    display: inline-block;
+
+    background: linear-gradient(
+
+        90deg,
+
+        #1746A2,
+
+        #2874F0,
+
+        #8CB9FF,
+
+        #2874F0,
+
+        #1746A2
+
+    );
+
+    background-size: 300% auto;
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    animation: royalTextShine 6s linear infinite;
+
+}
+
+
+/* SAREE CENTER */
+
+.logo-text small,
+.brand-name small {
+
+    display: block;
+
+    color: #E91E63;
+
+    font-size: 11px;
+
+    font-weight: 900;
+
+    letter-spacing: 5px;
+
+    margin-top: 3px;
+
+    animation: subtitleReveal 1.5s ease both;
+
+}
+
+
+/* ROYAL UNDERLINE */
+
+.logo-text::after,
+.brand-name::after {
+
+    content: "";
+
+    display: block;
+
+    width: 0;
+
+    height: 2px;
+
+    margin-top: 5px;
+
+    background: linear-gradient(
+
+        90deg,
+
+        #D4AF37,
+
+        #FFE58A,
+
+        #D4AF37
+
+    );
+
+    animation: royalUnderline 1.5s ease 0.8s forwards;
+
+}
+
+
+/* =====================================================
+   ROYAL ANIMATIONS
+===================================================== */
+
+@keyframes royalLogoGlow {
+
+    0%,
+    100% {
+
+        box-shadow:
+
+            0 8px 25px rgba(40, 116, 240, 0.20);
+
+    }
+
+    50% {
+
+        box-shadow:
+
+            0 12px 35px rgba(40, 116, 240, 0.35),
+
+            0 0 20px rgba(212, 175, 55, 0.15);
+
+    }
+
+}
+
+
+@keyframes logoShimmer {
+
+    0% {
+
+        left: -150%;
+
+    }
+
+    40% {
+
+        left: 150%;
+
+    }
+
+    100% {
+
+        left: 150%;
+
+    }
+
+}
+
+
+@keyframes royalTextShine {
+
+    0% {
+
+        background-position: 0% center;
+
+    }
+
+    100% {
+
+        background-position: 300% center;
+
+    }
+
+}
+
+
+@keyframes royalNameReveal {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(12px);
+
+        letter-spacing: 8px;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+        letter-spacing: 2px;
+
+    }
+
+}
+
+
+@keyframes subtitleReveal {
+
+    from {
+
+        opacity: 0;
+
+        letter-spacing: 10px;
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        letter-spacing: 5px;
+
+    }
+
+}
+
+
+@keyframes royalUnderline {
+
+    from {
+
+        width: 0;
+
+    }
+
+    to {
+
+        width: 100%;
+
+    }
+
+}
+
+
+/* =====================================================
+   HOVER EFFECT
+===================================================== */
+
+.logo:hover,
+.brand:hover,
+.logo-container:hover {
+
+    transform: translateY(-2px);
+
+    transition: transform 0.4s ease;
+
+}
+
+
+.logo:hover .logo-icon,
+.brand:hover .brand-icon {
+
+    transform: rotate(-5deg) scale(1.05);
+
+    transition: transform 0.4s ease;
+
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 768px) {
+
+    .logo-text,
+    .brand-name,
+    .logo h2 {
+
+        letter-spacing: 1px;
+
+    }
+
+    .logo-text small,
+    .brand-name small {
+
+        letter-spacing: 3px;
+
+        font-size: 9px;
+
+    }
+
+}
+
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .logo-icon,
+    .brand-icon,
+    .logo-text,
+    .brand-name,
+    .logo-text strong,
+    .brand-name strong,
+    .logo-text small,
+    .brand-name small {
+
+        animation: none !important;
+
+    }
+
+}
