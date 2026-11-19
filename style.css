@@ -3547,3 +3547,299 @@ header .brand {
     }
 
 }
+/* =====================================================
+   TANISHQ-STYLE LUXURY GOLD BRAND ANIMATION
+   MISHRA SAREE CENTER
+===================================================== */
+
+/* MAIN BRAND NAME */
+
+.logo-text,
+.brand-name,
+.logo h2,
+.brand h2 {
+
+    font-family: "Times New Roman", Georgia, serif !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: 2px !important;
+
+    background: linear-gradient(
+        120deg,
+        #8c6a1d,
+        #c9a227,
+        #f9e7a4,
+        #d4af37,
+        #fff4c2,
+        #b38728,
+        #8c6a1d
+    );
+
+    background-size: 300% auto;
+
+    -webkit-background-clip: text;
+
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    animation: tanishqGoldShimmer 7s linear infinite;
+
+    position: relative;
+
+}
+
+
+/* SAREE CENTER SUBTITLE */
+
+.logo-text small,
+.brand-name small,
+.logo small {
+
+    display: block;
+
+    color: #9b7425 !important;
+
+    -webkit-text-fill-color: #9b7425 !important;
+
+    font-family: "Segoe UI", Arial, sans-serif;
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 5px;
+
+    margin-top: 5px;
+
+}
+
+
+/* GOLD DECORATIVE LINE */
+
+.logo-text::after,
+.brand-name::after,
+.logo h2::after {
+
+    content: "";
+
+    display: block;
+
+    height: 2px;
+
+    width: 100%;
+
+    margin-top: 5px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #9b7425,
+        #f9e7a4,
+        #d4af37,
+        transparent
+    );
+
+    animation: goldLineGlow 4s ease-in-out infinite;
+
+}
+
+
+/* LOGO M BOX */
+
+.logo-icon,
+.brand-icon,
+.logo-symbol,
+.logo-mark {
+
+    background: linear-gradient(
+        145deg,
+        #f9e7a4,
+        #d4af37,
+        #9b7425,
+        #f5d76e
+    ) !important;
+
+    border: 1px solid #c9a227 !important;
+
+    box-shadow:
+
+        0 8px 25px rgba(180, 140, 40, 0.25),
+
+        inset 0 1px 2px rgba(255, 255, 255, 0.8);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* LETTER M */
+
+.logo-icon span,
+.brand-icon span,
+.logo-symbol span,
+.logo-mark span {
+
+    color: #ffffff !important;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    text-shadow:
+
+        0 1px 2px rgba(90, 60, 10, 0.3);
+
+}
+
+
+/* GOLD LIGHT REFLECTION ON LOGO */
+
+.logo-icon::after,
+.brand-icon::after,
+.logo-symbol::after,
+.logo-mark::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: -100%;
+
+    left: -150%;
+
+    width: 70%;
+
+    height: 300%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.8),
+        transparent
+    );
+
+    transform: rotate(25deg);
+
+    animation: goldLogoReflection 6s ease-in-out infinite;
+
+}
+
+
+/* =====================================================
+   GOLD LUXURY ANIMATIONS
+===================================================== */
+
+@keyframes tanishqGoldShimmer {
+
+    0% {
+
+        background-position: 300% center;
+
+    }
+
+    100% {
+
+        background-position: -300% center;
+
+    }
+
+}
+
+
+@keyframes goldLineGlow {
+
+    0%,
+    100% {
+
+        opacity: 0.5;
+
+        box-shadow: 0 0 0 transparent;
+
+    }
+
+    50% {
+
+        opacity: 1;
+
+        box-shadow: 0 0 8px rgba(212, 175, 55, 0.4);
+
+    }
+
+}
+
+
+@keyframes goldLogoReflection {
+
+    0% {
+
+        left: -150%;
+
+    }
+
+    35% {
+
+        left: 150%;
+
+    }
+
+    100% {
+
+        left: 150%;
+
+    }
+
+}
+
+
+/* HOVER */
+
+.logo:hover,
+.brand:hover,
+.logo-container:hover {
+
+    transform: translateY(-2px);
+
+    transition: transform 0.4s ease;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .logo-text,
+    .brand-name,
+    .logo h2 {
+
+        letter-spacing: 1px !important;
+
+    }
+
+    .logo-text small,
+    .brand-name small {
+
+        letter-spacing: 3px !important;
+
+    }
+
+}
+
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .logo-text,
+    .brand-name,
+    .logo h2,
+    .logo-icon::after,
+    .brand-icon::after {
+
+        animation: none !important;
+
+    }
+
+}
