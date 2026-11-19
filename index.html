@@ -1,100 +1,945 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Mishra Saree Center | Siwan, Bihar</title>
-<meta name="description" content="Explore elegant sarees at Mishra Saree Center, Siwan, Bihar. Bridal, silk, Banarasi, party wear and daily wear sarees.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Mishra Saree Center | Siwan</title>
+
+<meta name="description" content="Shop beautiful sarees at Mishra Saree Center, Siwan Bihar. Bridal, silk, Banarasi, party wear and daily wear collections.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
 <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="announcement">✨ Elegance for every occasion · Visit us in Siwan, Bihar</div>
-<header class="header">
-  <a class="brand" href="#"><span class="brand-mark">M</span><span><strong>MISHRA</strong><small>SAREE CENTER</small></span></a>
-  <nav><a href="#collections">Collections</a><a href="#products">Shop Sarees</a><a href="#about">About Us</a><a href="#contact">Contact</a></nav>
-  <div class="header-actions"><button class="lang-btn" id="langBtn" aria-label="Switch language">हिंदी</button><button class="icon-btn" id="searchBtn" title="Search">⌕</button><button class="cart-btn" id="cartBtn">🛍 <span>Bag</span> <b id="cartCount">0</b></button><button class="menu-btn" id="menuBtn">☰</button></div>
-</header>
-<main>
-<section class="hero">
- <div class="hero-content"><span class="eyebrow">THE ART OF INDIAN ELEGANCE</span><h1>Wear a story.<br><em>Make it yours.</em></h1><p>Discover timeless sarees, beautiful craftsmanship and styles made for your most memorable moments.</p><a href="#products" class="primary-btn">Explore Collection <span>→</span></a><div class="hero-note">Tradition · Grace · Celebration</div></div>
- <div class="hero-image"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1100&q=85" alt="Elegant Indian saree"></div>
- <div class="hero-badge">
-    <span>CURATED</span>
-    <strong>with love</strong>
-    <small>for every occasion</small>
- </div>
 
- <!-- HERO SLIDER DOTS -->
- <div class="hero-dots">
-    <button class="hero-dot active" data-slide="0"></button>
-    <button class="hero-dot" data-slide="1"></button>
-    <button class="hero-dot" data-slide="2"></button>
- </div>
+<!-- TOP ANNOUNCEMENT -->
+<div class="top-announcement">
+    <span>✨</span>
+    <span>Welcome to Mishra Saree Center — Elegance for Every Occasion</span>
+    <span>📍 Siwan, Bihar</span>
+</div>
 
-</section>
-  <!-- QUICK SHOPPING CATEGORIES -->
-<section class="quick-categories">
 
-    <a class="quick-category" href="#products">
-        <span class="quick-icon">👰</span>
-        <strong>Bridal Sarees</strong>
-    </a>
+<!-- MAIN SHOPPING HEADER -->
+<header class="main-header">
 
-    <a class="quick-category" href="#products">
-        <span class="quick-icon">✨</span>
-        <strong>Silk Collection</strong>
-    </a>
+    <div class="header-container">
 
-    <a class="quick-category" href="#products">
-        <span class="quick-icon">🪷</span>
-        <strong>Banarasi</strong>
-    </a>
+        <!-- LOGO -->
+        <a href="#" class="brand">
 
-    <a class="quick-category" href="#products">
-        <span class="quick-icon">💃</span>
-        <strong>Party Wear</strong>
-    </a>
+            <div class="brand-logo">M</div>
 
-    <a class="quick-category" href="#products">
-        <span class="quick-icon">🌿</span>
-        <strong>Cotton Sarees</strong>
-    </a>
+            <div class="brand-text">
+                <strong>MISHRA</strong>
+                <span>SAREE CENTER</span>
+            </div>
 
-    <a class="quick-category" href="#products">
-        <span class="quick-icon">☀️</span>
-        <strong>Daily Wear</strong>
-    </a>
+        </a>
 
-</section>
 
-<!-- PROMOTIONAL BANNER -->
-<section class="deal-strip">
-    <div>
-        <h3>Festive Style, Beautiful Prices ✨</h3>
-        <p>Discover beautiful sarees for every occasion.</p>
+        <!-- SEARCH -->
+        <div class="header-search">
+
+            <span class="search-icon">⌕</span>
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search for sarees, silk, bridal, Banarasi..."
+            >
+
+            <button id="searchBtn">SEARCH</button>
+
+        </div>
+
+
+        <!-- HEADER ACTIONS -->
+        <div class="header-actions">
+
+            <button class="lang-btn" id="langBtn">
+                हिंदी
+            </button>
+
+            <button class="header-action" id="cartBtn">
+
+                <span class="action-icon">🛍️</span>
+
+                <span class="action-text">My Bag</span>
+
+                <span class="cart-count" id="cartCount">0</span>
+
+            </button>
+
+            <button class="menu-btn" id="menuBtn">
+                ☰
+            </button>
+
+        </div>
+
     </div>
 
-    <span class="deal-tag">NEW COLLECTION</span>
+
+    <!-- NAVIGATION -->
+    <nav class="main-navigation">
+
+        <div class="nav-container">
+
+            <a href="#collections">Categories</a>
+
+            <a href="#products">All Sarees</a>
+
+            <a href="#collections">Wedding Collection</a>
+
+            <a href="#products">Banarasi</a>
+
+            <a href="#products">Silk Sarees</a>
+
+            <a href="#products">Party Wear</a>
+
+            <a href="#products">Cotton</a>
+
+            <a href="#about">About Us</a>
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+
+<!-- HERO SECTION -->
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            ✨ THE ART OF INDIAN ELEGANCE
+        </span>
+
+        <h1>
+            Wear a story.
+            <br>
+            <em>Make it yours.</em>
+        </h1>
+
+        <p>
+            Discover timeless sarees, beautiful craftsmanship
+            and styles made for your most memorable moments.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#products" class="primary-btn">
+                Explore Collection
+                <span>→</span>
+            </a>
+
+            <a href="#collections" class="secondary-btn">
+                View Categories
+            </a>
+
+        </div>
+
+        <div class="hero-features">
+
+            <span>✦ Tradition</span>
+            <span>✦ Grace</span>
+            <span>✦ Celebration</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <img
+            src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=90"
+            alt="Beautiful Indian Saree"
+        >
+
+    </div>
+
+
+    <div class="hero-badge">
+
+        <span>CURATED</span>
+
+        <strong>with love</strong>
+
+        <small>for every occasion</small>
+
+    </div>
+
+
+    <!-- SLIDER DOTS -->
+    <div class="hero-dots">
+
+        <button class="hero-dot active" data-slide="0"></button>
+
+        <button class="hero-dot" data-slide="1"></button>
+
+        <button class="hero-dot" data-slide="2"></button>
+
+    </div>
+
 </section>
-<section class="trust-row"><div>✦ Handpicked collections</div><div>✦ Styles for every occasion</div><div>✦ Personal shopping assistance</div></section>
-<section class="section" id="collections"><div class="section-head"><div><span class="eyebrow">FIND YOUR STYLE</span><h2>Shop by collection</h2></div><a href="#products" class="text-link">View all →</a></div>
-<div class="collection-grid">
- <a class="collection-card" data-cat="Wedding" href="#products"><img src="https://images.unsplash.com/photo-1583391733956-6c782764c9e4?auto=format&fit=crop&w=700&q=80"><div><span>01</span><h3>Wedding & Bridal</h3><p>For your unforgettable moments</p></div></a>
- <a class="collection-card" data-cat="Silk" href="#products"><img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=700&q=80"><div><span>02</span><h3>Silk Classics</h3><p>Rich textures & timeless grace</p></div></a>
- <a class="collection-card" data-cat="Party Wear" href="#products"><img src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=700&q=80"><div><span>03</span><h3>Party Wear</h3><p>Make every entrance special</p></div></a>
- <a class="collection-card" data-cat="Daily Wear" href="#products"><img src="https://images.unsplash.com/photo-1612963321197-8f7f4f4d7b8c?auto=format&fit=crop&w=700&q=80"><div><span>04</span><h3>Everyday Elegance</h3><p>Comfort meets beautiful style</p></div></a>
-</div></section>
-<section class="products-section" id="products"><div class="section-head"><div><span class="eyebrow">OUR FAVOURITES</span><h2>Featured sarees</h2><p class="muted">Find the saree that feels like you.</p></div></div>
-<div class="shop-controls"><div class="filters" id="filters"><button class="filter active" data-filter="All">All Sarees</button><button class="filter" data-filter="Wedding">Wedding</button><button class="filter" data-filter="Silk">Silk</button><button class="filter" data-filter="Banarasi">Banarasi</button><button class="filter" data-filter="Party Wear">Party Wear</button><button class="filter" data-filter="Cotton">Cotton</button><button class="filter" data-filter="Daily Wear">Daily Wear</button></div><input id="searchInput" placeholder="Search sarees..." class="search-input"></div>
-<div class="product-grid" id="productGrid"></div>
+
+
+<!-- SHOPPING CATEGORY SECTION -->
+<section class="shopping-categories">
+
+    <div class="category-heading">
+
+        <h2>Shop by Category</h2>
+
+        <a href="#products">View All →</a>
+
+    </div>
+
+
+    <div class="category-list">
+
+        <a href="#products" class="shopping-category">
+
+            <div class="category-image category-bridal">
+                👰
+            </div>
+
+            <strong>Bridal</strong>
+
+            <span>Wedding Collection</span>
+
+        </a>
+
+
+        <a href="#products" class="shopping-category">
+
+            <div class="category-image category-silk">
+                ✨
+            </div>
+
+            <strong>Silk Sarees</strong>
+
+            <span>Premium Collection</span>
+
+        </a>
+
+
+        <a href="#products" class="shopping-category">
+
+            <div class="category-image category-banarasi">
+                🪷
+            </div>
+
+            <strong>Banarasi</strong>
+
+            <span>Traditional Beauty</span>
+
+        </a>
+
+
+        <a href="#products" class="shopping-category">
+
+            <div class="category-image category-party">
+                💃
+            </div>
+
+            <strong>Party Wear</strong>
+
+            <span>Special Occasions</span>
+
+        </a>
+
+
+        <a href="#products" class="shopping-category">
+
+            <div class="category-image category-cotton">
+                🌿
+            </div>
+
+            <strong>Cotton</strong>
+
+            <span>Comfort & Style</span>
+
+        </a>
+
+
+        <a href="#products" class="shopping-category">
+
+            <div class="category-image category-daily">
+                🌸
+            </div>
+
+            <strong>Daily Wear</strong>
+
+            <span>Everyday Elegance</span>
+
+        </a>
+
+    </div>
+
 </section>
-<section class="story" id="about"><div class="story-img"><img src="https://images.unsplash.com/photo-1597983073493-88cd1b7f0595?auto=format&fit=crop&w=1000&q=80"></div><div class="story-copy"><span class="eyebrow">A LITTLE ABOUT US</span><h2>Tradition, woven<br>with love.</h2><p>At Mishra Saree Center, we believe every saree carries a story. From festive celebrations to everyday elegance, we bring you beautiful styles, colours and craftsmanship for every woman and every occasion.</p><p>Visit our store in Siwan, Bihar, and let us help you find your perfect drape.</p><a href="#contact" class="text-link">Visit our store →</a></div></section>
-<section class="cta"><span class="eyebrow">NEED HELP CHOOSING?</span><h2>Your perfect saree is waiting.</h2><p>Talk to us for availability, prices and personal recommendations.</p><a class="primary-btn" href="https://wa.me/919999999999?text=Hello%20Mishra%20Saree%20Center%2C%20I%20want%20to%20enquire%20about%20sarees" target="_blank">Chat on WhatsApp ↗</a></section>
+
+
+<!-- DEAL BANNER -->
+<section class="deal-banner">
+
+    <div class="deal-banner-content">
+
+        <span class="deal-small">
+            NEW COLLECTION
+        </span>
+
+        <h2>
+            Festive Style.
+            <br>
+            Beautiful Prices.
+        </h2>
+
+        <p>
+            Discover sarees that make every moment special.
+        </p>
+
+        <a href="#products" class="deal-button">
+            SHOP NOW →
+        </a>
+
+    </div>
+
+
+    <div class="deal-banner-image">
+
+        <img
+            src="https://images.unsplash.com/photo-1583391733956-6c782764c9e4?auto=format&fit=crop&w=900&q=90"
+            alt="Festive Saree Collection"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- TRUST SECTION -->
+<section class="trust-section">
+
+    <div class="trust-item">
+
+        <div class="trust-icon">💎</div>
+
+        <div>
+            <strong>Beautiful Collections</strong>
+            <span>Carefully selected styles</span>
+        </div>
+
+    </div>
+
+
+    <div class="trust-item">
+
+        <div class="trust-icon">🛍️</div>
+
+        <div>
+            <strong>Personal Shopping</strong>
+            <span>Choose with our assistance</span>
+        </div>
+
+    </div>
+
+
+    <div class="trust-item">
+
+        <div class="trust-icon">📍</div>
+
+        <div>
+            <strong>Local Store</strong>
+            <span>Siwan, Bihar</span>
+        </div>
+
+    </div>
+
+
+    <div class="trust-item">
+
+        <div class="trust-icon">💬</div>
+
+        <div>
+            <strong>WhatsApp Support</strong>
+            <span>Easy enquiries</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- COLLECTION SECTION -->
+<section class="collections-section" id="collections">
+
+    <div class="section-header">
+
+        <div>
+
+            <span class="section-label">
+                FIND YOUR STYLE
+            </span>
+
+            <h2>Explore Our Collections</h2>
+
+            <p>
+                Sarees for every celebration and every moment.
+            </p>
+
+        </div>
+
+        <a href="#products" class="view-all">
+            View All Collections →
+        </a>
+
+    </div>
+
+
+    <div class="collections-grid">
+
+
+        <a class="collection-card" data-cat="Wedding" href="#products">
+
+            <img
+                src="https://images.unsplash.com/photo-1583391733956-6c782764c9e4?auto=format&fit=crop&w=900&q=90"
+                alt="Wedding Sarees"
+            >
+
+            <div class="collection-overlay">
+
+                <span>01</span>
+
+                <h3>Wedding & Bridal</h3>
+
+                <p>For unforgettable moments</p>
+
+                <strong>EXPLORE →</strong>
+
+            </div>
+
+        </a>
+
+
+        <a class="collection-card" data-cat="Silk" href="#products">
+
+            <img
+                src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=900&q=90"
+                alt="Silk Sarees"
+            >
+
+            <div class="collection-overlay">
+
+                <span>02</span>
+
+                <h3>Silk Classics</h3>
+
+                <p>Rich textures and timeless grace</p>
+
+                <strong>EXPLORE →</strong>
+
+            </div>
+
+        </a>
+
+
+        <a class="collection-card" data-cat="Party Wear" href="#products">
+
+            <img
+                src="https://images.unsplash.com/photo-1617627143750-d86bc21e42bb?auto=format&fit=crop&w=900&q=90"
+                alt="Party Wear Sarees"
+            >
+
+            <div class="collection-overlay">
+
+                <span>03</span>
+
+                <h3>Party Wear</h3>
+
+                <p>Make every entrance special</p>
+
+                <strong>EXPLORE →</strong>
+
+            </div>
+
+        </a>
+
+
+        <a class="collection-card" data-cat="Daily Wear" href="#products">
+
+            <img
+                src="https://images.unsplash.com/photo-1612963321197-8f7f4f4d7b8c?auto=format&fit=crop&w=900&q=90"
+                alt="Daily Wear Sarees"
+            >
+
+            <div class="collection-overlay">
+
+                <span>04</span>
+
+                <h3>Everyday Elegance</h3>
+
+                <p>Comfort meets beautiful style</p>
+
+                <strong>EXPLORE →</strong>
+
+            </div>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- FEATURED PRODUCTS -->
+<section class="products-section" id="products">
+
+
+    <div class="products-title">
+
+        <div>
+
+            <span class="section-label">
+                OUR FAVOURITES
+            </span>
+
+            <h2>Featured Sarees</h2>
+
+            <p>
+                Find the saree that feels like you.
+            </p>
+
+        </div>
+
+        <div class="product-title-badge">
+            ✨ Curated Collection
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT FILTERS -->
+    <div class="shop-controls">
+
+        <div class="filters" id="filters">
+
+            <button class="filter active" data-filter="All">
+                All Sarees
+            </button>
+
+            <button class="filter" data-filter="Wedding">
+                Wedding
+            </button>
+
+            <button class="filter" data-filter="Silk">
+                Silk
+            </button>
+
+            <button class="filter" data-filter="Banarasi">
+                Banarasi
+            </button>
+
+            <button class="filter" data-filter="Party Wear">
+                Party Wear
+            </button>
+
+            <button class="filter" data-filter="Cotton">
+                Cotton
+            </button>
+
+            <button class="filter" data-filter="Daily Wear">
+                Daily Wear
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT GRID -->
+    <div class="product-grid" id="productGrid">
+
+    </div>
+
+
+</section>
+
+
+<!-- PROMOTIONAL SECTION -->
+<section class="promotion-section">
+
+    <div class="promotion-content">
+
+        <span>MADE FOR YOUR SPECIAL MOMENTS</span>
+
+        <h2>
+            Beauty that never goes out of style.
+        </h2>
+
+        <p>
+            From traditional weddings to everyday elegance,
+            find a saree for every chapter of your life.
+        </p>
+
+        <a href="#products" class="primary-btn">
+            Shop the Collection →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ABOUT SECTION -->
+<section class="story-section" id="about">
+
+    <div class="story-image">
+
+        <img
+            src="https://images.unsplash.com/photo-1597983073493-88cd1b7f0595?auto=format&fit=crop&w=1000&q=90"
+            alt="Indian Saree Collection"
+        >
+
+    </div>
+
+
+    <div class="story-content">
+
+        <span class="section-label">
+            A LITTLE ABOUT US
+        </span>
+
+        <h2>
+            Tradition,
+            <br>
+            woven with love.
+        </h2>
+
+        <p>
+            At Mishra Saree Center, we believe every saree carries a story.
+            From festive celebrations to everyday elegance, we bring you
+            beautiful styles, colours and craftsmanship for every woman
+            and every occasion.
+        </p>
+
+        <p>
+            Visit our store in Siwan, Bihar, and let us help you find
+            your perfect drape.
+        </p>
+
+        <a href="#contact" class="text-link">
+            Visit Our Store →
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- WHATSAPP CTA -->
+<section class="shopping-cta">
+
+    <div class="cta-content">
+
+        <span>NEED HELP CHOOSING?</span>
+
+        <h2>Your perfect saree is waiting.</h2>
+
+        <p>
+            Talk to us for availability, prices and personal recommendations.
+        </p>
+
+        <a
+            class="primary-btn"
+            href="https://wa.me/919999999999?text=Hello%20Mishra%20Saree%20Center%2C%20I%20want%20to%20enquire%20about%20sarees"
+            target="_blank"
+        >
+            💬 Chat on WhatsApp
+        </a>
+
+    </div>
+
+</section>
+
+
 </main>
-<footer id="contact"><div class="footer-brand"><a class="brand" href="#"><span class="brand-mark">M</span><span><strong>MISHRA</strong><small>SAREE CENTER</small></span></a><p>Elegance, tradition and beauty — all in one drape.</p></div><div><h4>Explore</h4><a href="#collections">Collections</a><a href="#products">Shop Sarees</a><a href="#about">Our Story</a></div><div><h4>Visit Us</h4><p>Siwan, Bihar, India</p><p>Open daily · Contact for timings</p><a href="#" id="mapLink">Get directions ↗</a></div><div><h4>Contact</h4><p>Phone: Add shop number</p><p>WhatsApp: Add WhatsApp number</p><a href="#" id="adminOpen">Owner Admin</a></div><div class="copyright">© 2026 Mishra Saree Center. All rights reserved.</div></footer>
-<div class="overlay" id="cartOverlay"><div class="drawer"><div class="drawer-head"><h3>Your Shopping Bag</h3><button class="close" data-close="cartOverlay">×</button></div><div id="cartItems"></div><div class="cart-total"><span>Total</span><strong id="cartTotal">₹0</strong></div><button class="primary-btn full" id="checkoutBtn">Order on WhatsApp</button></div></div>
-<div class="overlay" id="adminOverlay"><div class="admin-modal"><div class="drawer-head"><h3>Owner Product Manager</h3><button class="close" data-close="adminOverlay">×</button></div><p class="muted">Add products, prices and images. Demo products are editable on this device. Connect Apps Script to sync online.</p><form id="productForm"><input type="hidden" id="editId"><label>Saree name<input required id="pName" placeholder="e.g. Royal Banarasi Silk"></label><div class="form-row"><label>Price (₹)<input required type="number" id="pPrice" min="0"></label><label>Category<select id="pCategory"><option>Wedding</option><option>Silk</option><option>Banarasi</option><option>Party Wear</option><option>Cotton</option><option>Daily Wear</option></select></label></div><label>Description<input id="pDesc" placeholder="Short product description"></label><label>Product photo<input id="pImage" type="file" accept="image/*"></label><button class="primary-btn full" type="submit">Save Saree</button></form><div class="admin-list" id="adminList"></div><button class="outline-btn full" id="exportBtn">Export products JSON</button></div></div>
+
+
+<!-- FOOTER -->
+<footer class="site-footer" id="contact">
+
+
+    <div class="footer-grid">
+
+
+        <div class="footer-column footer-about">
+
+            <a href="#" class="brand footer-brand">
+
+                <div class="brand-logo">M</div>
+
+                <div class="brand-text">
+
+                    <strong>MISHRA</strong>
+
+                    <span>SAREE CENTER</span>
+
+                </div>
+
+            </a>
+
+            <p>
+                Elegance, tradition and beauty —
+                all in one drape.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Explore</h4>
+
+            <a href="#collections">Collections</a>
+
+            <a href="#products">Shop Sarees</a>
+
+            <a href="#about">Our Story</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Visit Us</h4>
+
+            <p>Siwan, Bihar, India</p>
+
+            <p>Open daily · Contact for timings</p>
+
+            <a href="#" id="mapLink">
+                Get Directions ↗
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Contact</h4>
+
+            <p>Phone: Add shop number</p>
+
+            <p>WhatsApp: Add WhatsApp number</p>
+
+            <a href="#" id="adminOpen">
+                Owner Admin
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 Mishra Saree Center. All rights reserved.
+        </span>
+
+        <span>
+            Designed with ❤️
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- CART DRAWER -->
+<div class="overlay" id="cartOverlay">
+
+    <div class="drawer">
+
+        <div class="drawer-head">
+
+            <h3>Your Shopping Bag</h3>
+
+            <button class="close" data-close="cartOverlay">
+                ×
+            </button>
+
+        </div>
+
+
+        <div id="cartItems"></div>
+
+
+        <div class="cart-total">
+
+            <span>Total</span>
+
+            <strong id="cartTotal">₹0</strong>
+
+        </div>
+
+
+        <button class="primary-btn full" id="checkoutBtn">
+            Order on WhatsApp
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ADMIN PANEL -->
+<div class="overlay" id="adminOverlay">
+
+    <div class="admin-modal">
+
+        <div class="drawer-head">
+
+            <h3>Owner Product Manager</h3>
+
+            <button class="close" data-close="adminOverlay">
+                ×
+            </button>
+
+        </div>
+
+
+        <p class="muted">
+            Add products, prices and images.
+            Demo products are editable on this device.
+            Connect Apps Script to sync online.
+        </p>
+
+
+        <form id="productForm">
+
+            <input type="hidden" id="editId">
+
+
+            <label>
+
+                Saree Name
+
+                <input
+                    required
+                    id="pName"
+                    placeholder="e.g. Royal Banarasi Silk"
+                >
+
+            </label>
+
+
+            <div class="form-row">
+
+
+                <label>
+
+                    Price (₹)
+
+                    <input
+                        required
+                        type="number"
+                        id="pPrice"
+                        min="0"
+                    >
+
+                </label>
+
+
+                <label>
+
+                    Category
+
+                    <select id="pCategory">
+
+                        <option>Wedding</option>
+
+                        <option>Silk</option>
+
+                        <option>Banarasi</option>
+
+                        <option>Party Wear</option>
+
+                        <option>Cotton</option>
+
+                        <option>Daily Wear</option>
+
+                    </select>
+
+                </label>
+
+            </div>
+
+
+            <label>
+
+                Description
+
+                <input
+                    id="pDesc"
+                    placeholder="Short product description"
+                >
+
+            </label>
+
+
+            <label>
+
+                Product Photo
+
+                <input
+                    type="file"
+                    id="pImage"
+                    accept="image/*"
+                >
+
+            </label>
+
+
+            <button class="primary-btn full" type="submit">
+                Save Saree
+            </button>
+
+        </form>
+
+
+        <div class="admin-list" id="adminList"></div>
+
+
+        <button class="outline-btn full" id="exportBtn">
+            Export Products JSON
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- TOAST -->
 <div class="toast" id="toast"></div>
+
+
+<!-- JAVASCRIPT -->
 <script src="app.js"></script>
-</body></html>
+
+</body>
+</html>
