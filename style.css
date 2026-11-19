@@ -3843,3 +3843,152 @@ header .brand {
     }
 
 }
+/* =====================================================
+   SHARP & PROFESSIONAL NAVIGATION FONT
+   MISHRA SAREE CENTER
+===================================================== */
+
+nav,
+.navbar,
+.nav-links {
+
+    font-family: "Segoe UI", Arial, sans-serif !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: 0.3px;
+
+}
+
+
+/* NAVIGATION LINKS */
+
+nav a,
+.nav-links a,
+.navbar a {
+
+    color: #ffffff !important;
+
+    font-size: 16px !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: 0.3px !important;
+
+    text-decoration: none !important;
+
+    text-shadow: none !important;
+
+    transition:
+        color 0.25s ease,
+        transform 0.25s ease;
+
+}
+
+
+/* SHARP TEXT */
+
+nav a,
+.nav-links a {
+
+    -webkit-font-smoothing: antialiased;
+
+    -moz-osx-font-smoothing: grayscale;
+
+}
+
+
+/* HOVER EFFECT */
+
+nav a:hover,
+.nav-links a:hover,
+.navbar a:hover {
+
+    color: #FFE6A0 !important;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* GOLD UNDERLINE */
+
+nav a::after,
+.nav-links a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -8px;
+
+    width: 100%;
+
+    height: 2px;
+
+    background: linear-gradient(
+        90deg,
+        #D4AF37,
+        #FFF0B0,
+        #D4AF37
+    );
+
+    transform: scaleX(0);
+
+    transform-origin: center;
+
+    transition: transform 0.3s ease;
+
+}
+
+
+/* UNDERLINE ON HOVER */
+
+nav a:hover::after,
+.nav-links a:hover::after {
+
+    transform: scaleX(1);
+
+}
+
+
+/* NAVIGATION SPACING */
+
+nav ul,
+.nav-links {
+
+    gap: 36px !important;
+
+}
+
+
+/* NAVIGATION BAR */
+
+nav,
+.navbar {
+
+    background: #2874F0;
+
+    box-shadow:
+
+        0 3px 12px rgba(20, 50, 100, 0.15);
+
+}
+
+
+/* MOBILE NAVIGATION */
+
+@media (max-width: 768px) {
+
+    nav a,
+    .nav-links a {
+
+        font-size: 15px !important;
+
+        font-weight: 800 !important;
+
+    }
+
+}
