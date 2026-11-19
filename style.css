@@ -3199,3 +3199,351 @@ section {
     }
 
 }
+/* =====================================================
+   ROYAL LUXURY BRAND ANIMATION
+   MISHRA SAREE CENTER
+===================================================== */
+
+/* BRAND NAME */
+
+.logo-text,
+.brand-name,
+.logo h2,
+header .logo,
+header .brand {
+
+    position: relative;
+
+    overflow: visible;
+
+}
+
+
+/* MISHRA TEXT — LUXURY BLUE/GOLD SHIMMER */
+
+.logo-text strong,
+.brand-name strong,
+.logo h2 strong,
+.logo-text,
+.brand-name {
+
+    background: linear-gradient(
+        110deg,
+        #1746a2 0%,
+        #2874f0 25%,
+        #d4af37 45%,
+        #fff1a8 50%,
+        #d4af37 55%,
+        #2874f0 75%,
+        #1746a2 100%
+    );
+
+    background-size: 300% 100%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    animation: royalBrandShimmer 8s ease-in-out infinite;
+
+}
+
+
+/* SAREE CENTER TEXT */
+
+.logo-text small,
+.brand-name small,
+.logo small {
+
+    color: #e91e63;
+
+    letter-spacing: 5px;
+
+    font-weight: 800;
+
+    position: relative;
+
+    animation: royalSubtleGlow 5s ease-in-out infinite;
+
+}
+
+
+/* ROYAL GOLD LINE */
+
+.logo-text::after,
+.brand-name::after,
+.logo h2::after {
+
+    content: "";
+
+    display: block;
+
+    width: 0%;
+
+    height: 2px;
+
+    margin-top: 5px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #d4af37,
+        #fff3b0,
+        #d4af37,
+        transparent
+    );
+
+    animation: royalGoldLine 3s ease-in-out infinite;
+
+}
+
+
+/* LOGO M */
+
+.logo-icon,
+.brand-icon,
+.logo-symbol,
+.logo-mark {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: linear-gradient(
+        135deg,
+        #2874f0,
+        #1746a2,
+        #0c2860
+    );
+
+    box-shadow:
+
+        0 8px 25px rgba(40, 116, 240, 0.25),
+
+        0 0 0 1px rgba(212, 175, 55, 0.15);
+
+}
+
+
+/* GOLD LIGHT PASSING THROUGH LOGO */
+
+.logo-icon::after,
+.brand-icon::after,
+.logo-symbol::after,
+.logo-mark::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: -100%;
+
+    left: -150%;
+
+    width: 80%;
+
+    height: 300%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 215, 120, 0.5),
+        transparent
+    );
+
+    transform: rotate(25deg);
+
+    animation: royalLogoShine 6s ease-in-out infinite;
+
+}
+
+
+/* LOGO LETTER */
+
+.logo-icon span,
+.brand-icon span,
+.logo-symbol span,
+.logo-mark span {
+
+    position: relative;
+
+    z-index: 2;
+
+    color: white;
+
+    font-family: Georgia, serif;
+
+}
+
+
+/* =====================================================
+   LUXURY ANIMATIONS
+===================================================== */
+
+@keyframes royalBrandShimmer {
+
+    0% {
+
+        background-position: 100% center;
+
+    }
+
+    50% {
+
+        background-position: 0% center;
+
+    }
+
+    100% {
+
+        background-position: 100% center;
+
+    }
+
+}
+
+
+@keyframes royalGoldLine {
+
+    0% {
+
+        width: 0%;
+
+        opacity: 0;
+
+    }
+
+    30% {
+
+        width: 100%;
+
+        opacity: 1;
+
+    }
+
+    70% {
+
+        width: 100%;
+
+        opacity: 1;
+
+    }
+
+    100% {
+
+        width: 0%;
+
+        opacity: 0;
+
+    }
+
+}
+
+
+@keyframes royalLogoShine {
+
+    0% {
+
+        left: -150%;
+
+    }
+
+    35% {
+
+        left: 150%;
+
+    }
+
+    100% {
+
+        left: 150%;
+
+    }
+
+}
+
+
+@keyframes royalSubtleGlow {
+
+    0%,
+    100% {
+
+        text-shadow:
+            0 0 0 rgba(212, 175, 55, 0);
+
+    }
+
+    50% {
+
+        text-shadow:
+            0 0 8px rgba(212, 175, 55, 0.25);
+
+    }
+
+}
+
+
+/* HOVER — PREMIUM FEEL */
+
+.logo:hover,
+.brand:hover,
+.logo-container:hover {
+
+    transform: translateY(-2px);
+
+    transition: transform 0.5s ease;
+
+}
+
+
+.logo:hover .logo-icon,
+.brand:hover .brand-icon {
+
+    box-shadow:
+
+        0 12px 35px rgba(40, 116, 240, 0.35),
+
+        0 0 20px rgba(212, 175, 55, 0.2);
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .logo-text,
+    .brand-name {
+
+        letter-spacing: 1px;
+
+    }
+
+    .logo-text small,
+    .brand-name small {
+
+        letter-spacing: 3px;
+
+    }
+
+}
+
+
+/* REDUCE MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .logo-text,
+    .brand-name,
+    .logo-text strong,
+    .brand-name strong,
+    .logo-text small,
+    .brand-name small,
+    .logo-icon::after,
+    .brand-icon::after {
+
+        animation: none !important;
+
+    }
+
+}
