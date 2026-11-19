@@ -3992,3 +3992,251 @@ nav,
     }
 
 }
+/* =========================================
+   LUXURY GOLD MISHRA BRAND ANIMATION
+========================================= */
+
+/* MISHRA BRAND NAME */
+
+.logo-text,
+.brand-name,
+.logo h2 {
+
+    font-weight: 900 !important;
+
+    background: linear-gradient(
+        110deg,
+        #8c6a1d,
+        #c9a227,
+        #f9e7a4,
+        #fff8dc,
+        #d4af37,
+        #9b7425,
+        #f5d76e,
+        #8c6a1d
+    );
+
+    background-size: 300% 100%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    animation: luxuryGoldShimmer 7s ease-in-out infinite;
+
+}
+
+
+/* SAREE CENTER */
+
+.logo-text small,
+.brand-name small,
+.logo small {
+
+    color: #b58a28 !important;
+
+    -webkit-text-fill-color: #b58a28 !important;
+
+    font-weight: 800 !important;
+
+    letter-spacing: 5px !important;
+
+}
+
+
+/* LOGO BOX */
+
+.logo-icon,
+.brand-icon,
+.logo-symbol,
+.logo-mark {
+
+    background: linear-gradient(
+        145deg,
+        #fff0b8,
+        #d4af37,
+        #a67c20,
+        #f7e28b,
+        #c49a2c
+    ) !important;
+
+    box-shadow:
+
+        0 8px 25px rgba(180, 140, 40, 0.25),
+
+        inset 0 1px 3px rgba(255,255,255,0.8);
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+/* LETTER M */
+
+.logo-icon span,
+.brand-icon span,
+.logo-symbol span,
+.logo-mark span {
+
+    color: #ffffff !important;
+
+    font-family: Georgia, serif;
+
+    text-shadow: 0 2px 3px rgba(90,60,10,0.25);
+
+}
+
+
+/* GOLD REFLECTION */
+
+.logo-icon::after,
+.brand-icon::after,
+.logo-symbol::after,
+.logo-mark::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: -100%;
+
+    left: -150%;
+
+    width: 70%;
+
+    height: 300%;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,0.8),
+        transparent
+    );
+
+    transform: rotate(25deg);
+
+    animation: luxuryLogoShine 6s ease-in-out infinite;
+
+}
+
+
+/* GOLD UNDERLINE */
+
+.logo-text::after,
+.brand-name::after {
+
+    content: "";
+
+    display: block;
+
+    height: 2px;
+
+    width: 100%;
+
+    margin-top: 4px;
+
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #b58a28,
+        #fff0b8,
+        #d4af37,
+        transparent
+    );
+
+    animation: luxuryLineGlow 4s ease-in-out infinite;
+
+}
+
+
+/* =========================================
+   ANIMATIONS
+========================================= */
+
+@keyframes luxuryGoldShimmer {
+
+    0% {
+        background-position: 300% center;
+    }
+
+    100% {
+        background-position: -300% center;
+    }
+
+}
+
+
+@keyframes luxuryLogoShine {
+
+    0% {
+        left: -150%;
+    }
+
+    35% {
+        left: 150%;
+    }
+
+    100% {
+        left: 150%;
+    }
+
+}
+
+
+@keyframes luxuryLineGlow {
+
+    0%, 100% {
+        opacity: 0.5;
+    }
+
+    50% {
+        opacity: 1;
+        box-shadow: 0 0 8px rgba(212,175,55,0.5);
+    }
+
+}
+
+
+/* HOVER */
+
+.logo:hover,
+.brand:hover {
+
+    transform: translateY(-2px);
+
+    transition: transform 0.4s ease;
+
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .logo-text small,
+    .brand-name small {
+
+        letter-spacing: 3px !important;
+
+    }
+
+}
+
+
+/* ACCESSIBILITY */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .logo-text,
+    .brand-name,
+    .logo-icon::after,
+    .brand-icon::after {
+
+        animation: none !important;
+
+    }
+
+}
