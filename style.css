@@ -356,3 +356,423 @@ button:hover {
         transition-duration: 0.01ms !important;
     }
 }
+/* ==========================================
+   FLIPKART STYLE SHOPPING EXPERIENCE
+   MISHRA SAREE CENTER
+========================================== */
+
+/* QUICK SHOP CATEGORIES */
+.quick-categories {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 15px;
+    padding: 25px 5%;
+    background: #ffffff;
+}
+
+.quick-category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    text-align: center;
+    padding: 20px 10px;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.4s ease;
+    animation: categoryEntrance 0.8s ease backwards;
+}
+
+.quick-category:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.quick-category:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.quick-category:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.quick-category:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.quick-category:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.quick-category:hover {
+    transform: translateY(-10px);
+    background: #fff8f4;
+    box-shadow: 0 15px 30px rgba(109, 24, 54, 0.12);
+}
+
+/* CATEGORY ICON */
+.quick-icon {
+    width: 75px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    border-radius: 50%;
+    background: linear-gradient(
+        135deg,
+        #fff0e5,
+        #f3dce5
+    );
+    box-shadow:
+        0 5px 15px rgba(109, 24, 54, 0.10),
+        inset 0 0 0 1px rgba(198, 163, 107, 0.3);
+
+    transition: all 0.5s ease;
+}
+
+.quick-category:hover .quick-icon {
+    transform: rotate(12deg) scale(1.15);
+    background: linear-gradient(
+        135deg,
+        #f5d5a4,
+        #e9b9cb
+    );
+    box-shadow: 0 0 25px rgba(198, 163, 107, 0.4);
+}
+
+.quick-category strong {
+    font-size: 13px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.quick-category:hover strong {
+    color: #8d2448;
+}
+
+/* CATEGORY ENTRANCE */
+@keyframes categoryEntrance {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* PROMOTIONAL BANNER */
+.deal-strip {
+    margin: 15px 5%;
+    padding: 25px 35px;
+    border-radius: 15px;
+
+    background: linear-gradient(
+        120deg,
+        #6d1836,
+        #a33a5d,
+        #6d1836
+    );
+
+    background-size: 200% 200%;
+    color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    overflow: hidden;
+    position: relative;
+
+    animation: dealBackground 8s ease infinite;
+}
+
+.deal-strip::before {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+    right: -100px;
+    top: -150px;
+}
+
+.deal-strip::after {
+    content: "";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.05);
+    left: 50%;
+    bottom: -100px;
+}
+
+.deal-strip h3 {
+    font-size: 26px;
+    margin: 0;
+    font-family: 'Playfair Display', serif;
+    animation: dealText 1s ease;
+}
+
+.deal-strip p {
+    margin-top: 8px;
+    color: #f6dfe5;
+    font-size: 13px;
+}
+
+.deal-tag {
+    position: relative;
+    z-index: 2;
+    background: #ffdc76;
+    color: #6d1836;
+    padding: 12px 20px;
+    border-radius: 7px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    white-space: nowrap;
+
+    animation: offerPulse 2s infinite;
+}
+
+@keyframes dealBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes offerPulse {
+    0%, 100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(255,220,118,0);
+    }
+
+    50% {
+        transform: scale(1.06);
+        box-shadow: 0 0 25px rgba(255,220,118,0.5);
+    }
+}
+
+@keyframes dealText {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* PRODUCT CARDS */
+.product-card {
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+}
+
+.product-image {
+    overflow: hidden;
+}
+
+.product-image img {
+    transition: transform 0.8s cubic-bezier(0.2,0.8,0.2,1);
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.12);
+}
+
+/* PRODUCT PRICE */
+.price {
+    font-weight: 800;
+    font-size: 19px;
+    color: #6d1836;
+}
+
+/* ADD TO CART */
+.add-btn {
+    transition: all 0.3s ease;
+}
+
+.add-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(40,116,240,0.3);
+}
+
+/* COLLECTION CARDS */
+.collection-card {
+    overflow: hidden;
+    transition: all 0.4s ease;
+}
+
+.collection-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 35px rgba(0,0,0,0.12);
+}
+
+.collection-card img {
+    transition: transform 0.8s ease;
+}
+
+.collection-card:hover img {
+    transform: scale(1.12);
+}
+
+/* BUTTON ANIMATIONS */
+button,
+.primary-btn {
+    transition: all 0.3s ease;
+}
+
+button:hover,
+.primary-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* SCROLL REVEAL */
+.section,
+.products-section,
+.story,
+.cta {
+    animation: sectionReveal 0.8s ease;
+}
+
+@keyframes sectionReveal {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* HERO BANNER */
+.hero h1 {
+    animation: heroTitle 1s ease;
+}
+
+.hero-image img {
+    transition: transform 8s ease;
+}
+
+.hero:hover .hero-image img {
+    transform: scale(1.05);
+}
+
+@keyframes heroTitle {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ANNOUNCEMENT BAR */
+.announcement {
+    background: linear-gradient(
+        90deg,
+        #6d1836,
+        #a33a5d,
+        #6d1836
+    );
+
+    background-size: 200% 100%;
+    animation: announcementMove 8s linear infinite;
+}
+
+@keyframes announcementMove {
+    to {
+        background-position: 200% 0;
+    }
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 900px) {
+
+    .quick-categories {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .quick-categories {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 15px 3%;
+        gap: 5px;
+    }
+
+    .quick-category {
+        padding: 12px 5px;
+    }
+
+    .quick-icon {
+        width: 55px;
+        height: 55px;
+        font-size: 25px;
+    }
+
+    .quick-category strong {
+        font-size: 11px;
+    }
+
+    .deal-strip {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .deal-strip h3 {
+        font-size: 21px;
+    }
+
+    .deal-tag {
+        font-size: 11px;
+    }
+
+    .product-card:hover {
+        transform: translateY(-5px);
+    }
+
+}
+
+/* ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+
+}
